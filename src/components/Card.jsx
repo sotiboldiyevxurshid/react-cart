@@ -19,4 +19,4 @@ const Cards = ({ item, handleClick }) => {
 
 export default Cards;
 
-// id, title, autor, price, img
+
