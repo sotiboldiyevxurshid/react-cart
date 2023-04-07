@@ -15,6 +15,7 @@ const Navbar = ({ setShow, size }) => {
           <span>{size}</span>
         </div>
       </div>
+      
     </nav>
   );
 };

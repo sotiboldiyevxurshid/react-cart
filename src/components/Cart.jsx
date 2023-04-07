@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+
+import { useState, useEffect} from "react";
 import "../styles/cart.css";
 
 const Cart = ({ cart, setCart, handleChange }) => {
@@ -17,10 +18,12 @@ const Cart = ({ cart, setCart, handleChange }) => {
   };
 
   useEffect(() => {
+    
     handlePrice();
   });
 
   return (
+   <>
     <article>
       {cart.map((item) => (
         <div className="cart_box" key={item.id}>
@@ -44,6 +47,7 @@ const Cart = ({ cart, setCart, handleChange }) => {
         <span>{price}$</span>
       </div>
     </article>
+    </>
   );
 };
 

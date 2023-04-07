@@ -46,6 +46,10 @@ section {
   outline: none;
 }
 
+.input{
+  justify-content: center;
+}
+
 
 @media (max-width:575px) {
   section{
