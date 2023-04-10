@@ -1,21 +1,26 @@
-
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-import NavbarRouter from "./components/NavbarRouter/NavbarRouter";
-import Section from "./components/Section/Section";
+import React from "react";
+import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import CreateData from "./companents/CreateData/CreateData";
+import Home from "./companents/Home/Home";
+import NavbarRouter from "./companents/Navbar/NavbarRouter";
+import EditPage from "./EditPage/EditPage";
+import TableList from "./TableList/TableList";
 
 const App = () => {
-  
 
   return (
    <>
-
-
    
+   <Router>
   <NavbarRouter/>
-  <Header/>
-  <Section/>
-  <Footer/>
+    <Routes>
+      <Route path="/home" element={<Home/>} />
+      <Route path="/create" element={<CreateData/>} />
+      <Route path="/table" element={<TableList/>} />
+      <Route path="/table/edit/:id" element={<EditPage/>} />
+
+    </Routes>
+  </Router>
    </>
   );
 };
