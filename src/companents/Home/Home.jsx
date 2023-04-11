@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar } from 'react-bootstrap'
+import Navbar from "../../components/navbar"
 import Amazon from '../../components/amazon'
 import Cart from '../../components/cart'
 import { useState } from 'react'
