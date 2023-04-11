@@ -31,7 +31,7 @@ const CreateData = () => {
     }
 
   
-    let url = "https://serverkerak.onrender.com/data"
+    let url = "http://localhost:5000/data"
     await createData(url, data)
   .then((res) => {
     if(res.status === 201){

@@ -21,11 +21,6 @@ const App = () => {
 
     </Routes>
   </Router>
-
-
-
-
- 
    </>
   );
 };

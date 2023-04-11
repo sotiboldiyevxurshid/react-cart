@@ -16,7 +16,7 @@ const EditPage = () => {
 
     const getOne = (id) => {
       
-        axios.get(`https://serverkerak.onrender.com/data/${id}`).then((data) => {
+        axios.get(`http://localhost:5000/data/${id}`).then((data) => {
             alert(data.statusText)
             setName(data.data.name)
             setText(data.data.text)
@@ -40,7 +40,7 @@ const editData = () => {
     amount:amount,
     image:image
   }
-axios.put(`xurshidbek-server.netlify.app${id}`, obj).then((res) =>  {
+axios.put(`http://localhost:5000/data/${id}`, obj).then((res) =>  {
   alert(res.statusText)
   navigate('/table')
 })}
