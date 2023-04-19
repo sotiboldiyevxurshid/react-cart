@@ -9,11 +9,7 @@ const NavbarRouter = () => {
         <Row>
             <Col>
             <Nav justify variant="tabs" defaultActiveKey="/home">
-      <Nav.Item>
-       <Link to ="/home" style={{textDecoration:"none"}}>
-       <li style={{color: "#000", paddingTop:"10px "}}>Home</li>
-       </Link>
-      </Nav.Item>
+     
       <Nav.Item>
       <Link to ="/create" style={{textDecoration:"none"}}>
        <li  style={{color: "#000", paddingTop:"10px "}}>Create Data</li>

@@ -32,71 +32,7 @@ const Navbar = ({ setShow, size }) => {
         </Col>
       </Row>
       <Row>
-        <Col md={1} xs={12}>
-          <button className="search-box">
-            <h4 className="search">{t("text.li_1")}</h4>
-          </button>
-        </Col>
-
-        <Col md={1} xs={12}>
-          <button className="search-box">
-            <h4 className="search">{t("text.li_2")}</h4>
-          </button>
-        </Col>
-
-        <Col  md={1} xs={12}>
-          <button className="search-box">
-            <h4 className="search">{t("text.li_3")}</h4>
-          </button>
-        </Col>
-
-        <Col  md={1} xs={12}>
-          <button className="search-box">
-            <h4 className="search">{t("text.li_4")}</h4>
-          </button>
-        </Col>
-
-        <Col  md={1} xs={12}>
-          <button className="search-box">
-            <h4 className="search">{t("text.li_5")}</h4>
-          </button>
-        </Col>
-
-        <Col md={1} xs={12}>
-          <button className="search-box">
-            <h4 className="search">{t("text.li_6")}</h4>
-          </button>
-        </Col>
-
-        <Col  md={1} xs={12}>
-          <button className="search-box">
-            <h4 className="search">{t("text.li_7")}</h4>
-          </button>
-        </Col>
-
-        <Col  md={1} xs={12}>
-          <button className="search-box">
-            <h4 className="search">{t("text.li_8")}</h4>
-          </button>
-        </Col>
-
-        <Col  md={1} xs={12}>
-          <button className="search-box">
-            <h4 className="search">{t("text.li_9")}</h4>
-          </button>
-        </Col>
-
-        <Col  md={1} xs={12}>
-          <button className="search-box">
-            <h4 className="search">{t("text.li_10")}</h4>
-          </button>
-        </Col>
-
-        <Col  md={1} xs={12}>
-          <button className="search-box">
-            <h4 className="search">{t("text.li_11")}</h4>
-          </button>
-        </Col>
+       
 
         <Col  md={1} xs={12}>
           <NavDropdown

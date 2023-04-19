@@ -11,16 +11,17 @@ const App = () => {
   return (
    <>
    
+    <div className="kerak">
    <Router>
   <NavbarRouter/>
     <Routes>
-      <Route path="/home" element={<Home/>} />
+    <Route path="/home" element={<Home/>} />
       <Route path="/create" element={<CreateData/>} />
       <Route path="/table" element={<TableList/>} />
       <Route path="/table/edit/:id" element={<EditPage/>} />
-
-    </Routes>
+  </Routes>
   </Router>
+    </div>
    </>
   );
 };

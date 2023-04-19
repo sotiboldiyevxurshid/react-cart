@@ -75,6 +75,7 @@ export default function Footer() {
                 </div>
               </>
             ))}
+            
           </Col>
           <Col md={4} xs={12}>
             {footer1.map(({ footer1, footer_icon,cl }) => (

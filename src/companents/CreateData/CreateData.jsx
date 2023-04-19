@@ -8,11 +8,11 @@ const CreateData = () => {
 
   
   
-  const[name , setName] = useState("")
-  const[text , setText] = useState("")
+  const[title , setTitle] = useState("")
+  const[location , setLocation] = useState("")
   const[price , setPrice] = useState("")
-  const[amount , setAmount] = useState("")
-  const[image , setImage] = useState("")
+  const[sale , setSale] = useState("")
+  const[img , setImg] = useState("")
   const navigate = useNavigate()
 
 
@@ -23,24 +23,24 @@ const CreateData = () => {
   
   let data = {
       
-    name:name,
-    text:text,
+    title:title,
+    location:location,
     price:price,
-    amount:amount,
-    image:image
+    sale:sale,
+    img:img
     }
 
   
-    let url = "https://serverkerak.onrender.com/data"
+    let url = "https://xurshidbek-server.onrender.com/data"
     await createData(url, data)
   .then((res) => {
     if(res.status === 201){
       alert("succes")
-      setName("")
-      setText("")
+      setTitle("")
+      setLocation("")
       setPrice("")
-      setAmount("")
-      setImage("")
+      setSale("")
+      setImg("")
       navigate("/table")
     }
   }) 
@@ -65,16 +65,16 @@ const CreateData = () => {
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Name</Form.Label>
       
-        <Form.Control type="text"  placeholder="Hotel Name" onChange={(e) => setName(e.target.value)} />
+        <Form.Control type="text"  placeholder="Hotel Name" onChange={(e) => setTitle(e.target.value)} />
       
-      {name.length < 1 ? <p style={{color:"red"}}>Error</p> : <p style={{color:"blue"}}>succes</p>}
+      {title.length < 1 ? <p style={{color:"red"}}>Error</p> : <p style={{color:"blue"}}>succes</p>}
 
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Text</Form.Label>
-        <Form.Control type="text"  placeholder="text" onChange={(e) => setText(e.target.value)} />
-        {text.length < 1 ? <p style={{color:"red"}}>error</p> : <p style={{color:"blue"}}>success</p>}
+        <Form.Label>Location</Form.Label>
+        <Form.Control type="text"  placeholder="text" onChange={(e) => setLocation(e.target.value)} />
+        {location.length < 1 ? <p style={{color:"red"}}>error</p> : <p style={{color:"blue"}}>success</p>}
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -85,16 +85,16 @@ const CreateData = () => {
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>amount</Form.Label>
-        <Form.Control type="text"  placeholder="amount" onChange={(e) => setAmount(e.target.value)} />
-        {amount.length < 1 ? <p style={{color:"red"}}>error</p> : <p style={{color:"blue"}}>success</p>}
+        <Form.Control type="text"  placeholder="amount" onChange={(e) => setSale(e.target.value)} />
+        {sale.length < 1 ? <p style={{color:"red"}}>error</p> : <p style={{color:"blue"}}>success</p>}
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Img</Form.Label>
-        <Form.Control type="text"  placeholder="img" onChange={(e) => setImage(e.target.value)} />
-        {image.length < 1 ? <p style={{color:"red"}}>error</p> : <p style={{color:"blue"}}>success</p>}
+        <Form.Control type="text"  placeholder="img" onChange={(e) => setImg(e.target.value)} />
+        {img.length < 1 ? <p style={{color:"red"}}>error</p> : <p style={{color:"blue"}}>success</p>}
       </Form.Group>
-      {name.length  < 2 ?
+      {title.length  < 2 ?
                <Button style={{width:"100%" }}variant="danger"> Submit </Button>:<Button style={{width:"100%"}} variant="primary" onClick={createAllData}>
               Submit
             </Button> 
